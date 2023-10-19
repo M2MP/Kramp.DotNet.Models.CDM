@@ -1,0 +1,146 @@
+﻿<ns0:DespatchAdvice xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-DespatchAdvice-2.1.xsd" xmlns:ns0="http://schemas.kramp.com/M2M/CDM/2023/02/DespatchAdvice-2" xmlns:ns1="http://uri.etsi.org/01903/v1.3.2#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:ns2="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" xmlns:ns4="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2" xmlns:ns6="urn:oasis:names:specification:bdndr:schema:xsd:UnqualifiedDataTypes-1" xmlns:ns7="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" xmlns:ns8="http://uri.etsi.org/01903/v1.4.1#" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ns9="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<cbc:ID xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">2300007</cbc:ID>
+	<cbc:IssueDate xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">2023-02-17</cbc:IssueDate>
+	<cac:OrderReference xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cbc:ID>2975848</cbc:ID>
+		<cbc:SalesOrderID>2211000076</cbc:SalesOrderID>
+	</cac:OrderReference>
+	<cac:DespatchSupplierParty xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID>3065203</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>VAS NL</cbc:Name>
+			</cac:PartyName>
+		</cac:Party>
+	</cac:DespatchSupplierParty>
+	<cac:DeliveryCustomerParty xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID>04</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Kramp Groep B.V. (NL) (LE04)</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Breukelaarweg</cbc:StreetName>
+				<cbc:BuildingNumber>33</cbc:BuildingNumber>
+				<cbc:CityName>Varsseveld</cbc:CityName>
+				<cbc:PostalZone>7051DW</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PhysicalLocation>
+				<cac:Address>
+					<cbc:StreetName>Breukelaarweg</cbc:StreetName>
+					<cbc:BuildingNumber>33</cbc:BuildingNumber>
+					<cbc:CityName>Varsseveld</cbc:CityName>
+					<cbc:PostalZone>7051DW</cbc:PostalZone>
+					<cac:Country>
+						<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+		</cac:Party>
+	</cac:DeliveryCustomerParty>
+	<cac:BuyerCustomerParty xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID>04</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Kramp Groep B.V. (NL) (LE04)</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Breukelaarweg</cbc:StreetName>
+				<cbc:BuildingNumber>33</cbc:BuildingNumber>
+				<cbc:CityName>Varsseveld</cbc:CityName>
+				<cbc:PostalZone>7051DW</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PhysicalLocation>
+				<cac:Address>
+					<cbc:StreetName>Breukelaarweg</cbc:StreetName>
+					<cbc:BuildingNumber>33</cbc:BuildingNumber>
+					<cbc:CityName>Varsseveld</cbc:CityName>
+					<cbc:PostalZone>7051DW</cbc:PostalZone>
+					<cac:Country>
+						<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:SellerSupplierParty xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID>3065203</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>VAS NL</cbc:Name>
+			</cac:PartyName>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:Shipment xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cbc:ID>2300007</cbc:ID>
+		<cac:Delivery>
+			<cac:Despatch>
+				<cbc:ActualDespatchDate>2023-02-17</cbc:ActualDespatchDate>
+			</cac:Despatch>
+		</cac:Delivery>
+	</cac:Shipment>
+	<cac:DespatchLine xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cbc:ID>1</cbc:ID>
+		<cbc:DeliveredQuantity unitCode="MTR">1000.000</cbc:DeliveredQuantity>
+		<cac:OrderLineReference>
+			<cbc:LineID>5</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>2975848</cbc:ID>
+				<cbc:SalesOrderID>2211000076</cbc:SalesOrderID>
+			</cac:OrderReference>
+		</cac:OrderLineReference>
+		<cac:Item>
+			<cbc:Description>Hose HSKPQ6 on reel</cbc:Description>
+			<cbc:Name>000000000000070</cbc:Name>
+			<cac:BuyersItemIdentification>
+				<cbc:ID>HSKPQ6P025M</cbc:ID>
+			</cac:BuyersItemIdentification>
+			<cac:SellersItemIdentification>
+				<cbc:ID>000000000000070</cbc:ID>
+				<cbc:ExtendedID>000</cbc:ExtendedID>
+			</cac:SellersItemIdentification>
+		</cac:Item>
+		<cac:Shipment>
+			<cbc:ID>300</cbc:ID>
+		</cac:Shipment>
+	</cac:DespatchLine>
+		<cac:DespatchLine xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+		<cbc:ID>2</cbc:ID>
+		<cbc:DeliveredQuantity unitCode="MTR">1000.000</cbc:DeliveredQuantity>
+		<cac:OrderLineReference>
+			<cbc:LineID>1</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>2975848</cbc:ID>
+				<cbc:SalesOrderID>2211000076</cbc:SalesOrderID>
+			</cac:OrderReference>
+		</cac:OrderLineReference>
+		<cac:Item>
+			<cbc:Description>Hose HSKPQ6 on reel</cbc:Description>
+			<cbc:Name>000000000000070</cbc:Name>
+			<cac:BuyersItemIdentification>
+				<cbc:ID>HSKPQ6P025M</cbc:ID>
+			</cac:BuyersItemIdentification>
+			<cac:SellersItemIdentification>
+				<cbc:ID>000000000000070</cbc:ID>
+				<cbc:ExtendedID>000</cbc:ExtendedID>
+			</cac:SellersItemIdentification>
+		</cac:Item>
+		<cac:Shipment>
+			<cbc:ID>300</cbc:ID>
+		</cac:Shipment>
+	</cac:DespatchLine>
+</ns0:DespatchAdvice>

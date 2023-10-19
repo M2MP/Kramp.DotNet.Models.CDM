@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "CDM\Models\Models.csproj", "{F370D13B-EA36-4FE6-B31C-25D4232D9F53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78686A2D-1308-4AB2-97AA-374ACCDCD55C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		GitVersion.yml = GitVersion.yml
+		Jenkinsfile = Jenkinsfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "CDM\Tests\Tests.csproj", "{E70DADFB-055A-4AC8-A019-49CAD8E1254B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F370D13B-EA36-4FE6-B31C-25D4232D9F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F370D13B-EA36-4FE6-B31C-25D4232D9F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F370D13B-EA36-4FE6-B31C-25D4232D9F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F370D13B-EA36-4FE6-B31C-25D4232D9F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70DADFB-055A-4AC8-A019-49CAD8E1254B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70DADFB-055A-4AC8-A019-49CAD8E1254B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70DADFB-055A-4AC8-A019-49CAD8E1254B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70DADFB-055A-4AC8-A019-49CAD8E1254B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C17C2F82-A8D7-4F7A-8A42-A04930EE8B28}
+	EndGlobalSection
+EndGlobal

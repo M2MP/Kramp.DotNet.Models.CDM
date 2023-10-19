@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net472;netcoreapp3.1;netstandard2.0</TargetFrameworks>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>kramp.snk</AssemblyOriginatorKeyFile>
+    <AssemblyName>Kramp.DotNet.Models.CDM</AssemblyName>
+    <RootNamespace>Kramp.DotNet.Models.CDM</RootNamespace>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <FileVersion>3.4.0.0</FileVersion>
+    <InformationalVersion>3.4.0-beta.2+Branch.develop.Sha.4a25cbe63d3bccae4936239bbaef905fc03c7f06</InformationalVersion>
+    <Version>3.4.0-beta0002</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Xml.XmlSerializer" Version="4.3.0" />
+  </ItemGroup>
+</Project>

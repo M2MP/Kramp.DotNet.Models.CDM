@@ -1,0 +1,109 @@
+﻿<ns0:CreditNote xmlns:ns0="http://schemas.kramp.com/M2M/CDM/2023/02/CreditNote-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ns1="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2" xmlns:ns2="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://www.w3.org/2009/xmldsig11#" xmlns:ns5="http://www.w3.org/2000/09/xmldsig#" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ns8="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2" xmlns:ns7="http://uri.etsi.org/01903/v1.4.1#" xmlns:ns3="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:ns9="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-1" xmlns:ns6="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:ns10="urn:oasis:names:specification:ubl:schema:xsd:CoreComponentTypeSchemaModule:2">
+	<cbc:ID>9109247673</cbc:ID>
+	<cbc:IssueDate>2021-12-14</cbc:IssueDate>
+	<cbc:CreditNoteTypeCode listAgencyID="KRAMP">381</cbc:CreditNoteTypeCode>
+	<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+	<cac:OrderReference>
+		<cbc:ID>2865517</cbc:ID>
+	</cac:OrderReference>
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeAgencyID="9">8716741000002</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Toermalijnstraat 5</cbc:StreetName>
+				<cbc:CityName>Alkmaar</cbc:CityName>
+				<cbc:PostalZone>1812 RL</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>NL007282199B01</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeAgencyID="9">8716106198375</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>ul Skandynawska 1</cbc:StreetName>
+				<cbc:CityName>STARE MIASTRO</cbc:CityName>
+				<cbc:PostalZone>62-571</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>PL</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeAgencyID="9">8716106198337</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Breukelaarweg 33</cbc:StreetName>
+				<cbc:CityName>VARSSEVELD</cbc:CityName>
+				<cbc:PostalZone>7051 DW</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>NL005435511B09</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:Delivery/>
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="EUR">23.72</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="EUR">112.95</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="EUR">23.72</cbc:TaxAmount>
+			<cbc:Percent>21</cbc:Percent>
+			<cac:TaxCategory>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="UNCL5283">7</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="EUR">112.95</cbc:LineExtensionAmount>
+		<cbc:PayableAmount currencyID="EUR">136.67</cbc:PayableAmount>
+		<cbc:PayableAlternativeAmount currencyID="EUR">136.67</cbc:PayableAlternativeAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:CreditNoteLine>
+		<cbc:ID>10</cbc:ID>
+		<cbc:CreditedQuantity unitCode="EA">1</cbc:CreditedQuantity>
+		<cbc:LineExtensionAmount currencyID="EUR">112.95</cbc:LineExtensionAmount>
+		<cac:OrderLineReference>
+			<cbc:LineID>000005</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>2865517</cbc:ID>
+			</cac:OrderReference>
+		</cac:OrderLineReference>
+		<cac:Item>
+			<cac:BuyersItemIdentification>
+				<cbc:ID>SPEC070</cbc:ID>
+			</cac:BuyersItemIdentification>
+			<cac:SellersItemIdentification>
+				<cbc:ID>01040375</cbc:ID>
+			</cac:SellersItemIdentification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="EUR">112.95</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="1">1</cbc:BaseQuantity>
+			<cbc:PriceTypeCode listID="EDIFACT">AAA</cbc:PriceTypeCode>
+		</cac:Price>
+	</cac:CreditNoteLine>
+</ns0:CreditNote>
