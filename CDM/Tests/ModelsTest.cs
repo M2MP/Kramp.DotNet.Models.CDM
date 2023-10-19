@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
@@ -37,7 +37,7 @@ namespace Kramp.DotNet.Models.CDM.Tests
         [TestMethod]
         public void TestDeserializeOrder()
         {
-            string orderXml = File.ReadAllText(@$"{TestFolder}\CDMOrder.xml");
+            string orderXml = File.ReadAllText(Path.Join(TestFolder, "CDMOrder.xml"));
             StringReader stringReader = new StringReader(orderXml);
 
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Order));
@@ -177,7 +177,7 @@ namespace Kramp.DotNet.Models.CDM.Tests
 
             string actualXmlString = stringWriter.ToString();
             Diff myDiff = DiffBuilder.Compare(Input.FromString(actualXmlString))
-                           .WithTest(Input.FromFile($@"{TestFolder}\CDMOrderResponse.xml")).CheckForSimilar()
+                           .WithTest(Input.FromFile(Path.Join(TestFolder, "CDMOrderResponse.xml"))).CheckForSimilar()
                            .Build();
 
             Assert.IsFalse(myDiff.HasDifferences(), "CheckForSimilar");
@@ -187,7 +187,7 @@ namespace Kramp.DotNet.Models.CDM.Tests
         [TestMethod]
         public void TestDeserializeOrderResponse()
         {
-            string orderResponseXml = File.ReadAllText(@$"{TestFolder}\CDMOrderResponse.xml");
+            string orderResponseXml = File.ReadAllText(Path.Join(TestFolder, "CDMOrderResponse.xml"));
             StringReader stringReader = new StringReader(orderResponseXml);
 
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(OrderResponse));
@@ -225,7 +225,7 @@ namespace Kramp.DotNet.Models.CDM.Tests
             try
             {
                 //Deserialize Invoice
-                string invoiceXML = File.ReadAllText($@"{TestFolder}\PurchaseInvoice_CDM_INA-GB_206681597.xml");
+                string invoiceXML = File.ReadAllText(Path.Join(TestFolder, "PurchaseInvoice_CDM_INA-GB_206681597.xml"));
                 StringReader stringReader = new StringReader(invoiceXML);
 
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(Invoice));
@@ -264,7 +264,7 @@ namespace Kramp.DotNet.Models.CDM.Tests
             try
             {
                 //Deserialize CreditNote
-                string creditNoteXML = File.ReadAllText($@"{TestFolder}\CDMCreditNote.xml");
+                string creditNoteXML = File.ReadAllText(Path.Join(TestFolder, "CDMCreditNote.xml"));
                 StringReader stringReader = new StringReader(creditNoteXML);
 
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(CreditNote));
@@ -303,7 +303,7 @@ namespace Kramp.DotNet.Models.CDM.Tests
             try
             {
                 //Deserialize DespatchNote
-                string despatchXML = File.ReadAllText($@"{TestFolder}\CDMDespatchAdvice.xml");
+                string despatchXML = File.ReadAllText(Path.Join(TestFolder, "CDMDespatchAdvice.xml"));
                 StringReader stringReader = new StringReader(despatchXML);
 
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(DespatchAdvice));
