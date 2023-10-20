@@ -24,9 +24,5 @@ jobs:
       run: dotnet test --no-build
     - name: Pack
       run: dotnet pack --no-build --configuration Debug --output .
-    - name: List NuGet sources
-      run: dotnet nuget list source
-    - name: Add GitHub Source
-      run: dotnet nuget add source https://nuget.pkg.github.com/richard-vandentoorn/index.json --username richard-vandentoorn --password ${{secrets.nuget_api_key}} --name GitHub --store-password-in-clear-text --valid-authentication-types basic
     - name: Push
-      run: dotnet nuget push *.nupkg --source GitHub --skip-duplicate
+      run: dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/richard-vandentoorn/index.json --api-key ${{secrets.nuget_api_key}} --skip-duplicate
