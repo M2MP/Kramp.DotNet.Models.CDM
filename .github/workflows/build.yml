@@ -29,8 +29,5 @@ jobs:
       run: dotnet test --no-build
     - name: Pack
       run: dotnet pack --no-build --configuration Debug --output .
-    #- name: Add NuGet source
-    #  # see the command in https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry
-    #  run: dotnet nuget add source --username richard-vandentoorn --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name GitHub "https://nuget.pkg.github.com/richard-vandentoorn/index.json"
-    - name: Push
-      run: dotnet nuget push *.nupkg
+    - name: Publish Nuget to GitHub registry
+      run: dotnet nuget push *.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/M2MP/index.json  
