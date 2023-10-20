@@ -16,6 +16,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/setup-dotnet@v3
+      with:
+        source-url: https://nuget.pkg.github.com/richard-vandentoorn/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -24,8 +29,8 @@ jobs:
       run: dotnet test --no-build
     - name: Pack
       run: dotnet pack --no-build --configuration Debug --output .
-    - name: Add NuGet source
-      # see the command in https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry
-      run: dotnet nuget add source --username richard-vandentoorn --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name GitHub "https://nuget.pkg.github.com/richard-vandentoorn/index.json"
+    #- name: Add NuGet source
+    #  # see the command in https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry
+    #  run: dotnet nuget add source --username richard-vandentoorn --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name GitHub "https://nuget.pkg.github.com/richard-vandentoorn/index.json"
     - name: Push
-      run: dotnet nuget push *.nupkg --source GitHub --skip-duplicate
+      run: dotnet nuget push *.nupkg
