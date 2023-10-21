@@ -11,11 +11,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     permissions:
       packages: write
-
     steps:
     - uses: actions/checkout@v3
       with:
@@ -49,4 +47,12 @@ jobs:
       with:
         name: Assemblies (net7.0)
         path: CDM/Models/bin/Debug/net7.0
-
+  
+  deploy:
+      needs: build
+      runs-on: biztalk2020-dev-richard
+      steps:
+       - name: Download Artifact (net48)
+         uses: actions/download-artifact@v3
+         with:
+           name: Assemblies (net48)
