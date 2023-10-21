@@ -39,3 +39,8 @@ jobs:
       run: dotnet pack --no-build --configuration Debug --output .
     - name: Push Nuget
       run: dotnet nuget push *.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/M2MP/index.json --skip-duplicate
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Artifacts (net48)
+        path: /bin/Debug/net48/*.dll
