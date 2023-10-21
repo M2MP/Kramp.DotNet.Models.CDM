@@ -18,18 +18,24 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Restore
-      run: dotnet restore
-    - name: GitVersion
+      with:
+        fetch-depth: 0
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/setup@v0
+      with:
+        versionSpec: '5.x'      
+    - name: Execute GitVersion
       uses: gittools/actions/gitversion/execute@v0
       with:
         useConfigFile: true
         additionalArguments: '/updateprojectfiles'
-    - name: Build
+    - name: Restore Dependencies
+      run: dotnet restore
+    - name: Build Solution
       run: dotnet build --no-restore
-    - name: Test
+    - name: Test Solution
       run: dotnet test --no-build
-    - name: Pack
+    - name: Pack Nuget
       run: dotnet pack --no-build --configuration Debug --output .
-    - name: Nuget Push
+    - name: Push Nuget
       run: dotnet nuget push *.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/M2MP/index.json --skip-duplicate
