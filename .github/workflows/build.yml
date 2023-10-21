@@ -20,6 +20,11 @@ jobs:
     - uses: actions/checkout@v3
     - name: Restore
       run: dotnet restore
+    - name: GitVersion
+      uses: gittools/actions/gitversion/execute@v0
+      with:
+        useConfigFile: true
+        additionalArguments: '/updateprojectfiles'
     - name: Build
       run: dotnet build --no-restore
     - name: Test
