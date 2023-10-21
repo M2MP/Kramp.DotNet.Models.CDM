@@ -1,0 +1,10 @@
+assembly-versioning-scheme: Major
+branches:
+  feature:
+    tag: alpha.{BranchName}
+  develop:
+    tag: beta
+  release:
+    tag: rc
+  hotfix:
+    tag: rc
