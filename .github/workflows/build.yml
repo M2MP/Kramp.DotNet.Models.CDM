@@ -58,4 +58,4 @@ jobs:
            name: Assemblies (net48)
        - name: Install to GAC
          shell: pwsh
-         run: Get-Location
+         run: Echo "Hello Powershell!"
