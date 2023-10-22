@@ -56,3 +56,6 @@ jobs:
          uses: actions/download-artifact@v3
          with:
            name: Assemblies (net48)
+       - name: Install to GAC
+         shell: pwsh
+         run: Get-Location
