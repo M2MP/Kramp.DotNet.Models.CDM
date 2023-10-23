@@ -57,5 +57,6 @@ jobs:
          with:
            name: Assemblies (net48)
        - name: Install to GAC
-         shell: cmd
-         run: powershell -command "echo 'Hello Powershell!'"
+         shell: pwsh
+         run: | 
+           echo 'Hello Powershell!'
