@@ -56,7 +56,7 @@ jobs:
          uses: actions/download-artifact@v3
          with:
            name: Assemblies (net48)
-       - name: Install to GAC
+       - name: Deploy to Global Assembly Cache (GAC)
          shell: pwsh
          run: | 
-           echo 'Hello Powershell!'
+           Get-Location
