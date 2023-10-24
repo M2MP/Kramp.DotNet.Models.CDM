@@ -60,4 +60,5 @@ jobs:
          shell: pwsh
          run: | 
            Install-Module -Name GAC -Scope CurrentUser -Force
+           Get-ChildItem *.dll | ForEach-Object { Add-GacAssembly -LiteralPath $_ }
            
