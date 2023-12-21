@@ -27,6 +27,8 @@ jobs:
       with:
         useConfigFile: true
         additionalArguments: '/updateprojectfiles'
+    - name: Install Dotnet-Coverage
+      run: dotnet tool install --global dotnet-coverage
     - name: Restore Dependencies
       run: dotnet restore
     - name: Build Solution
@@ -34,7 +36,7 @@ jobs:
     - name: Test Solution
       run: dotnet test --no-build --collect:"Code Coverage" /p:CoverletOutputFormat=opencover
     - name: Code Coverage
-      uses: codecov/codecov-action@v1
+      run: dotnet-coverage collect dotnet test --no-build -f xml  -o 'coverage.xml'
     - name: Pack Nuget
       run: dotnet pack --no-build --configuration Debug --output .
     - name: Push Nuget
