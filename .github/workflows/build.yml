@@ -32,7 +32,7 @@ jobs:
     - name: Build Solution
       run: dotnet build --no-restore
     - name: Test Solution
-      run: dotnet test --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      run: dotnet test --no-build --collect:"Code Coverage" /p:CoverletOutputFormat=opencover
     - name: Code Coverage
       uses: codecov/codecov-action@v1
     - name: Pack Nuget
