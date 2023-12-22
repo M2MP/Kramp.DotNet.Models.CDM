@@ -64,6 +64,11 @@ jobs:
         license: '' # Optional license for PRO version. Get your license here: https://reportgenerator.io/pro
         customSettings: '' # Optional custom settings (separated by semicolon). See: https://github.com/danielpalme/ReportGenerator/wiki/Settings.
         toolpath: 'reportgeneratortool' # Default directory for installing the dotnet tool.
+    - name: Publish to GitHub Pages
+#      if: ${{ github.ref == 'refs/heads/master' }}
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: coveragereport
     - name: Upload Artifacts (net7.0)
       uses: actions/upload-artifact@v3
       with:
